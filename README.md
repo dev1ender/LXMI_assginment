@@ -3,6 +3,16 @@
 This is case management system which incude account(user) , case , task 
 Each user can have a role either manager,task_manager
 
+## JWT token
+
+```
+Generate token
+/api/token/ POST <username,password>
+
+Referesh Token
+/api/token/refresh/ POST <refresh>
+```
+
 ### User API
 
 ```
@@ -23,6 +33,8 @@ list user
 view user
 /account/<id>/view/ GET
 ````
+
+
 
 ### Case API
 ```
