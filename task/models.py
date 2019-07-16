@@ -9,7 +9,6 @@ class Task(models.Model):
 
     
     class Meta:
-        ordering = ['-created_on']
         default_permissions = ()
         permissions = ( 
             ("task_create", "Can create task"),

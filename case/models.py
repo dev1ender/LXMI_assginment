@@ -9,7 +9,6 @@ class Case(models.Model):
     
 
     class Meta:
-        ordering = ['-created_on']
         default_permissions = ()
         permissions = ( 
             ("case_create", "Can create case"),

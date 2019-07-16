@@ -22,8 +22,6 @@ class User(AbstractBaseUser, PermissionsMixin):
     REQUIRED_FIELDS = ['email']
     objects = UserManager()
 
-    class Meta:
-        ordering = ['-created_on']
 
     
 
