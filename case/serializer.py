@@ -6,4 +6,4 @@ class CaseSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Case
-        fields = ('id', 'name', 'task', 'assigned_to', 'created_on', 'created_by','updated_on','updated_by')
+        fields = ('id', 'name', 'task', 'assigned_to')

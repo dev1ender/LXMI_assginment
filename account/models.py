@@ -16,10 +16,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     is_admin = models.BooleanField(default=False)
     is_staff = models.BooleanField(default=False)
     role =models.CharField(max_length=50, choices=ROLES)
-    created_on = models.DateTimeField(auto_now_add=True,auto_now=False)
-    updated_on = models.DateTimeField(auto_now=True)
-    created_by = models.ForeignKey("self",related_name='created_by_user', null=True, blank=True, on_delete=models.SET_NULL)
-    updated_by = models.ForeignKey("self", related_name='updated_by_user',on_delete=models.SET_NULL,blank=True, null=True)
+    
     
     USERNAME_FIELD = 'username'
     REQUIRED_FIELDS = ['email']
